@@ -1,0 +1,21 @@
+
+header
+  = image_tag "logo.svg"
+  = link_to "https://muxumuxu.com/", target: "_blank"
+    = "Visit us →"
+
+.wrapper
+  .content
+    = image_tag "hello.png", height: "62px"
+    p Hi, we are Muxu.Muxu.
+    p This video showcases design and development projects made by our team with our lovely clients. 
+    p Here are some of our best bits!
+  .video
+    #play-overlay
+      #play-button onclick="favicon()"
+        = image_tag "play-button.svg"
+    = partial "shared/video"
+
+footer
+  = image_tag "vhs.png", height: "32px"  
+  p Animation: Benjamin Ulmet | MUSIC: The George Kaplan Conspiracy - Meeting Place | Drawings: Luc Chaissac, Damien Da Costa | Codings: Audrey Labuxiere, David Miotti, Jimmy Mayoukou
