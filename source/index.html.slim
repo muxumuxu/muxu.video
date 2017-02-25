@@ -7,7 +7,12 @@ header
 .wrapper
   .content
     = image_tag "hello.png", height: "62px"
-    p Hi, we are Muxu.Muxu.
+    p
+      | Hi, we are 
+      = link_to "https://muxumuxu.com/", target: "_blank"
+        | Muxu.Muxu
+      | .
+
     p This video showcases design and development projects made by our team with our lovely clients. 
     p Here are some of our best bits!
   .video
