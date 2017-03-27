@@ -173,14 +173,21 @@ footer
       box-shadow: 0
       animation: none
       width: 100%
+      display: none
+      #play-overlay
+        width: 100% !important
+        display: none
+    .video-overlay
+      display: block
+      position: relative
+      .close
+        display: none
       iframe
         position: relative
         left: 0
         top: 0
         width: 100% !important
-      #play-overlay
-        width: 100% !important
-        display: none
+        height: auto !important
   footer
     position: relative
     padding: 40px 0
