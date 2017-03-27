@@ -2,14 +2,19 @@ var iframe = document.getElementById('video');
 
 var player = $f(iframe);
 
-var playButton = document.getElementById("#play-overlay");
-$('#play-overlay').click(function(){
+$("#play-overlay").click(function(){
   player.api("play");
 });
 
+$(".close").click(function(){
+  player.api("unload");
+});
+
 $(document).ready(function() {
-  $('#play-overlay').click(function(){
-      $(this).addClass("hidden");
-      $(".content" ).addClass("hidden");
+  $("#play-overlay").click(function(){
+      $(".video-overlay").addClass("play");
+  });
+  $(".close").click(function(){
+      $(".video-overlay").removeClass("play");
   });
 });
